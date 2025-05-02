@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Objects</h1>
+<h2>Object Destructuring</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create an Object
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50
+};
+
+// Destructuring
+let {firstName, lastName} = person;
+
+// Display Primitive Values
+document.getElementById("demo").innerHTML =
+firstName + " " + lastName;
+</script>
+
+</body>
+</html>
