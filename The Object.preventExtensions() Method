@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Objects</h1>
+<h2>The Object.preventExtensions() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+"use strict"
+// Create Object
+const person = {firstName:"John", lastName:"Doe"};
+
+// Prevent Extensions
+Object.preventExtensions(person)
+
+// Test Error
+let text = "";
+try {
+  person.nationality = "English";
+}
+catch (err) {
+  text = err;
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
